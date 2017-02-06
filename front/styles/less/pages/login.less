@@ -1,0 +1,265 @@
+@import '../Functions';
+
+.container.login {
+  background: url('../../../images/login-bg.jpg');
+  background-size: 100% 100%;
+  .ie10.loginbox {
+    display: table-cell;
+    vertical-align: middle;
+    .border-radius(#FFF, 3px);
+    .box-center();
+    font-size: 100%;
+    width: 26.25em;
+    padding-bottom: 2.5em;
+    background: #FFF;
+    text-align: center;
+    h2 {
+      color: #333;
+      margin-top: 1.5em;
+      font-size: 1.25em;
+    }
+    form {
+      width: 22.5em;
+      margin: 1.5em auto 0;
+
+      .input-field {
+        margin-top: 1em;
+        height: 2.5em;
+        position: relative;
+        overflow: hidden;
+        input {
+          font-size: 0.875em;
+          float: left;
+          width: 100%;
+          border: thin solid #CCC;
+          box-sizing: border-box;
+          padding-right: 25%;
+        }
+        .text {
+          font-size: 0.875em;
+          height: 2.5em;
+          line-height: 2.5em;
+          padding-right: 10/@unit;
+          position: absolute;
+          right: 0;
+          top: 0;
+          text-align: center;
+          a {
+            color: #595959;
+            display: block;
+            padding-bottom: 2px;
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+
+      input {
+        font-size: 0.875em;
+        border-radius: 2px;
+        border: 1px solid #c2d0d8;
+        height: 35px;
+        outline: none;
+        padding-top: 2px;
+        text-indent: 10px;
+        width: 100%;
+        margin-top: 1em;
+        &:focus {
+          .box-shadow(0px 0px 4px 0px, #7dabc9);
+          border: thin solid #3392EC;
+        }
+        &:first-child {
+          margin: 0;
+        };
+      }
+
+      .warning {
+        font-size: 0.875em;
+        color: #E84646;
+      }
+
+      .label-field {
+        overflow: hidden;
+        label {
+          float: left;
+          margin-top: 10/@unit;
+          .text {
+            margin-left: 0.2em;
+            margin-bottom: 1em;
+            color: #333;
+            float: left;
+            font-size: 0.875em;
+          }
+          input[type=checkbox] {
+            margin-top: 0.3em!important;
+            width: 1em;
+            height: 1em;
+            float: left;
+            border: 1px solid #333;
+            background: #FFF;
+          }
+        }
+      }
+
+      .button {
+        width: 100%;
+        border: 1px solid #FFF;
+        margin-top: 1.25rem;
+        border-radius: 5px;
+        background: #43C35E;
+        padding: 10/@unit 20/@unit;
+        color: #FFF;
+        font-size: 1em;
+        font-weight: bold;
+        &:hover {
+          background: tint(#43C35E, 20%);
+        };
+        &:active {
+          background: shade(#43C35E, 20%);
+        };
+        &[disabled] {
+          .opacity(50)
+          &:hover {
+            background: #43C35E;
+          }
+        }
+      }
+    }
+  }
+
+  .loginbox {
+    display: table-cell;
+    vertical-align: middle;
+    .border-radius(#FFF, 3px);
+    .box-center();
+    font-size: 100%;
+    position: absolute;
+    width: 26.25em;
+    padding-bottom: 2.5em;
+    background: #FFF;
+    text-align: center;
+    h2 {
+      color: #333;
+      margin-top: 1.5em;
+      font-size: 1.25em;
+    }
+    form {
+      width: 22.5em;
+      margin: 1.5em auto 0;
+
+      .input-field {
+        margin-top: 1em;
+        height: 2.5em;
+        position: relative;
+        overflow: hidden;
+        input {
+          font-size: 0.875em;
+          float: left;
+          width: 100%;
+          border: thin solid #CCC;
+          box-sizing: border-box;
+          padding-right: 25%;
+        }
+        .text {
+          font-size: 0.875em;
+          height: 2.5em;
+          line-height: 2.5em;
+          padding-right: 10/@unit;
+          position: absolute;
+          right: 0;
+          top: 0;
+          text-align: center;
+          a {
+            color: #595959;
+            display: block;
+            padding-bottom: 2px;
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+
+      input {
+        font-size: 0.875em;
+        border-radius: 2px;
+        border: 1px solid #c2d0d8;
+        height: 35px;
+        outline: none;
+        padding-top: 2px;
+        text-indent: 10px;
+        width: 100%;
+        margin-top: 1em;
+        &:focus {
+          .box-shadow(0px 0px 4px 0px, #7dabc9);
+          border: thin solid #3392EC;
+        }
+        &:first-child {
+          margin: 0;
+        };
+      }
+
+      .warning {
+        font-size: 0.875em;
+        color: #E84646;
+      }
+
+      .label-field {
+        overflow: hidden;
+        label {
+          float: left;
+          margin-top: 10/@unit;
+          .text {
+            margin-left: 0.2em;
+            margin-bottom: 1em;
+            color: #333;
+            float: left;
+            font-size: 0.875em;
+          }
+          input[type=checkbox] {
+            margin-top: 0.3em!important;
+            width: 1em;
+            height: 1em;
+            float: left;
+            border: 1px solid #333;
+            background: #FFF;
+          }
+        }
+      }
+
+      .button {
+        width: 100%;
+        border: 1px solid #FFF;
+        margin-top: 1.25rem;
+        border-radius: 5px;
+        background: #43C35E;
+        padding: 10/@unit 20/@unit;
+        color: #FFF;
+        font-size: 1em;
+        font-weight: bold;
+        &:hover {
+          background: tint(#43C35E, 20%);
+        };
+        &:active {
+          background: shade(#43C35E, 20%);
+        };
+        &[disabled] {
+          .opacity(50)
+          &:hover {
+            background: #43C35E;
+          }
+        }
+      }
+    }
+  }
+  footer {
+    width: 100%;
+    height: 2em;
+    font-size: 14/@unit;
+    position: absolute;
+    color: #b8b8b8;
+    bottom: 0;
+    text-align: center;
+  }
+}
